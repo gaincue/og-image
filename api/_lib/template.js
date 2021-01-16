@@ -102,7 +102,7 @@ export function getHtml(parsedReq) {
         <div>
             <div class=${lang == "en" ? "message" : "messageCn"}>${
     lang == "en" ? greetingEn.dear : greetingCn.dear
-  } ${sanitizeHtml(recipient)}</div>
+  }${sanitizeHtml(recipient)}</div>
             <br />
             <div class=${lang == "en" ? "message" : "messageCn"}>${
     lang == "en" ? greetingEn[greeting] : greetingCn[greeting]
@@ -119,19 +119,19 @@ export function getHtml(parsedReq) {
 }
 
 const greetingEn = {
-  dear: `\nDear`,
+  dear: `\nDear\n`,
   love: "Wishing you a year filled with warmth, joy and endearing moments.",
   prosperity: "Wishing you a year filled with goodwill and success.",
   health: "Wishing you a year with optimal health and vitalty.",
   wish: "\n\nHappy Chinese New Year! \n\n",
-  from: `From `,
+  from: `From\n`,
 }
 
 const greetingCn = {
-  dear: `\n亲爱的`,
+  dear: `\n亲爱的\n`,
   love: "祝愿你在新的一年温馨幸福，\n天天都愉快，日日有笑声。",
   prosperity: "祝愿你在新的一年里事业步步高升，\n欣欣向荣。",
   health: "祝愿你在新的一年里身体健康，\n活力四射。",
   wish: "\n新年快乐。\n\n",
-  from: `上`,
+  from: `\n上`,
 }

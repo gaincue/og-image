@@ -72,6 +72,7 @@ function getCss(fontSize) {
         line-height: 1.4;
         letter-spacing: 1.5;
         white-space: break-spaces;
+        text-transform: uppercase;
     }
 
     .messageCn {
